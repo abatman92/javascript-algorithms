@@ -8,10 +8,16 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+  return arr3 = arr1.reduce((acc, item) => {
+    if (arr2.includes(item) && !acc.includes(item)) {
+        return [...acc, item]
+    }
+    return acc
+  },[])
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(intersection([1, 5, 4, 2], [8, 91, 4, 1, 3])); // [4, 1]
 console.log(intersection([1, 5, 4, 2], [7, 12])); // []
+console.log((intersection([1, 1, 5, 4, 2], [8, 91, 4, 1, 1, 3] )));

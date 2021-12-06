@@ -7,7 +7,18 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+    arr = []
+    for (let i = 1; i <= n; i ++) {
+        arr.push(i)
+    }
+    return res = arr.reduce((acc, item) => {
+        return acc + item.toString().split('').reduce((acc, item) => {
+            if (item.includes('0')) {
+                return acc + 1
+            }
+            return acc
+        }, 0)
+    },0)
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

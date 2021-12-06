@@ -9,8 +9,17 @@
 */
 
 function sumOfTwo(arr, sum) {
-    // Напишите код здесь
+  let arrSum = [];
+   for (let i = 0; i < arr.length; i++) {
+    for (let j = 1; j < arr.length; j++) {
+      if(j > i) {
+        arrSum.push(arr[i] + arr[j])
+      }
+    }
+  }
+  return arrSum.includes(sum)
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

@@ -7,9 +7,14 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
+    const arr = str.split(" ")
+  let arr2 = []
+  for (let i = 0; i<arr.length; i++) {
+   arr2.push(`${arr[i].slice(0, 1).toUpperCase()}${arr[i].slice(1)}`)
+  }
+  return res = arr2.join(' ')
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
+console.log(capitalize('молодость все простит')); // "Молодость Всё Простит"
