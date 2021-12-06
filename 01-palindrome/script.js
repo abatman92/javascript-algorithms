@@ -14,8 +14,14 @@
 */
 
 function palindrome(str) {
-    const strReversed = str.toLowerCase().split('').reverse().join('')
-    return str.toLowerCase() === strReversed;
+    const strLowerCase = str.toLowerCase()
+    for (let i = 0; i < Math.floor(str.length / 2); i++) {
+        strLowerCase[i] === strLowerCase[str.length - 1 - i]
+        if (strLowerCase[i] !== strLowerCase[str.length - 1 - i]) {
+            return false
+        }
+    }
+    return true
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
