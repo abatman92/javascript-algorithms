@@ -8,13 +8,7 @@
 */
 
 function uniq(arr) {
-    const arrWeak = arr.reduce((acc, item) => {
-        if (!acc.includes(item)) {
-            return [...acc, item]
-        }
-        return acc
-    }, [])
-    return arrWeak
+    return Array.from(new Set(arr))
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

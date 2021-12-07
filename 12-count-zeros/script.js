@@ -7,7 +7,7 @@
 */
 
 function countZeros(n) {
-    arr = []
+    const arr = []
     for (let i = 1; i <= n; i ++) {
         arr.push(i)
     }

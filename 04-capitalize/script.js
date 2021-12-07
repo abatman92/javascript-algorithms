@@ -7,11 +7,8 @@
 */
 
 function capitalize(str) {
-    const arr = str.split(" ")
-  let arr2 = []
-  for (let i = 0; i<arr.length; i++) {
-   arr2.push(`${arr[i].slice(0, 1).toUpperCase()}${arr[i].slice(1)}`)
-  }
+  const arr2 = []
+  str.split(" ").forEach(element => arr2.push(`${element.slice(0, 1).toUpperCase()}${element.slice(1)}`))
   return res = arr2.join(' ')
 }
 

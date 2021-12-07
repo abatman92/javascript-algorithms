@@ -7,7 +7,7 @@
 */
 
 function primes(num) {
-  let numArr = []
+  const numArr = []
   for(let n = 2; n <= num; n++) {
     function isPrime(n) { 
       if (n <= 1) {
