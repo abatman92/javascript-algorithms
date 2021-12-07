@@ -1,8 +1,9 @@
 function sumOfTwo(arr, sum) {
   let arr2 = []
-  for (let i = 1; i < arr.length; i++) {
-      arr2.push(arr[i-1] + arr[i]);
-      arr2.push(arr[i-1]) + arr[i + i]
+  for (let i = 1; i <= arr.length; i++) {
+      arr2.push(arr[0] + arr[i])
+      arr2.push(arr[i] + arr[i + i])
+      arr2.push(arr[i] + arr[i - i])
   }
   return arr2
 }
